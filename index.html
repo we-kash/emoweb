@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="css/default.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -44,14 +45,14 @@
 				</div>
 				<div class="col-xl-10 col-lg-10 col-md-10">
 					<div class="menu text-right">
-						<nav id="mobile-menu">
+						<nav id="mobile-menu" style="font-weight: 500;">
 							<ul>
-								<li> <a href="#"> HOME </a></li>
-								<li> <a href="#portfolio">About</a></li>
+								<li> <a href="#Home"> HOME </a></li>
+								<li> <a href="#about">About</a></li>
+								<li> <a href="#team"> Team </a></li>
+								<li> <a href="#services">Our Offerings</a></li>
 								<li> <a href="#blog"> Blog</a></li>
-								<li> <a href="#page"> FAQ</a></li>
-								<li> <a href="#shop"> Team </a></li>
-								<li> <a href="#featured">Services</a></li>
+								<li> <a href="#faq"> FAQ</a></li>
 									<!-- <a href="#"> <i class="icon_bag_alt"></i> </a>
 									<a href="#"> <i class="icon_search"></i> </a> -->
 							</ul>
@@ -64,8 +65,8 @@
 	</div>
 </header>
 <!-- Slider Area -->
-<div class="slider-area">
-	<div class="slider-active owl-carousel">
+<div class="slider-area" id="Home">
+	<!-- <div class="slider-active owl-carousel"> -->
 		<div class="single-slider d-flex justify-content-center align-items-center" style="background-image:url(img/slider/background1.jpg)">
 			<div class="slider-inner">
 				<span>Emulating Meta Orion</span>
@@ -80,10 +81,10 @@
 				<p>F**k Up Ho Gya</p>
 			</div>
 		</div> -->
-	</div>
+	<!-- </div> -->
 </div>
 <!-- Welcome Area -->
-<div class="welcome-area pt-120 pb-60">
+<div class="welcome-area pt-120 pb-60" id="about">
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-6 col-lg-6">
@@ -100,7 +101,7 @@
 							<li>AR/VR Development</li>
 						</ul>
 					</p> -->
-					<a href="contact" class="btn" >Contact Us</a>
+					<a href="#contact" class="btn" >Contact Us</a>
 				</div>
 			</div>
 			<div class="col-xl-6 col-lg-6">
@@ -112,7 +113,7 @@
 	</div>
 </div>
 <!-- Service Area -->
-<div class="service-area gray-bg pt-100 pb-50" id="featured">
+<div class="service-area gray-bg pt-100 pb-50" id="services">
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-12">
@@ -125,7 +126,7 @@
 			<div class="col-xl-4 col-lg-4 col-md-6">
 				<div class="single-service mb-70">
 					<div class="service-icon">
-						<i class="icon_drawer_alt"> </i>
+						<i class="fas fa-gamepad"> </i>
 					</div>
 					<div class="service-info">
 						<h4> Game Development
@@ -137,7 +138,7 @@
 			<div class="col-xl-4 col-lg-4 col-md-6">
 				<div class="single-service mb-70">
 					<div class="service-icon">
-						<i class="icon_flowchart "> </i>
+						<i class="fas fa-vr-cardboard "> </i>
 					</div>
 					<div class="service-info">
 						<h4> AR/VR Development </h4>
@@ -148,7 +149,7 @@
 			<div class="col-xl-4 col-lg-4 col-md-6">
 				<div class="single-service mb-70">
 					<div class="service-icon">
-						<i class="icon_tools "> </i>
+						<i class="fas fa-globe"> </i>
 					</div>
 					<div class="service-info">
 						<h4> Web Development </h4>
@@ -170,7 +171,7 @@
 			<div class="col-xl-4 col-lg-4 col-md-6">
 				<div class="single-service mb-70">
 					<div class="service-icon">
-						<i class="icon_pencil-edit"> </i>
+						<i class="fab fa-android"> </i>
 					</div>
 					<div class="service-info">
 						<h4> Android Development </h4>
@@ -218,7 +219,7 @@
 <!-- Accodian Area -->
 
 <!-- Testimonial Area -->
-<div class="testimonial-area pt-110 pb-110" style="background-image:url(img/bg/5084287.jpg)">
+<div class="testimonial-area pt-110 pb-110" style="background-image:url(img/bg/5084287.jpg)" id="team">
 	<div class="testimonial-active owl-carousel">
 		<div class="single-testimonial text-center">
 			<img src="img/team/Utkarsh.jpg" alt="Avater" style="width: 200px;" />
@@ -267,7 +268,7 @@
 	</div>
 </div>
 <!-- Question And Answers-->
-<div class="accordion pt-100 pb-110" id="page">
+<div class="accordion pt-100 pb-110" id="faq">
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-12">
@@ -437,8 +438,8 @@
 </div> -->
 
 <!-- Footer Area -->
-<a href="contact"><footer>
-<div class="footer-top pt-100 pb-90" style="background-image:url(img/bg/footer_top.jpg)">
+<!-- <a href="contact"><footer> -->
+<div class="footer-top pt-100 pb-90" style="background-image:url(img/bg/contactBg.jpg)" id="contact">
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-5 col-lg-5">
@@ -498,44 +499,6 @@
 		</div>
 	</div>
 </footer></a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		<!-- JS here -->
         <script src="js/vendor/jquery-1.12.4.min.js"></script>
         <script src="js/popper.min.js"></script>

@@ -171,7 +171,7 @@ html {
 	left: 0;
 	width: 100%;
 	z-index: 2;
-	border-bottom: 1px solid #797b80;
+	/* border-bottom: 1px solid #797b80; */
 }
 .logo {
 	padding-top: 25px;
@@ -251,6 +251,12 @@ html {
 	left:auto;
 	right:50px;
 }
+/* Navigation panel */
+nav#mobile-menu ul li a {
+	font-size: 16px;
+	font-weight: bold;
+}
+
 /* Welcome Area */
 .welcome h2 {
 	color: #24292f;
