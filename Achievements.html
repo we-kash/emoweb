@@ -22,6 +22,249 @@
             <link rel="stylesheet" href="css/style.css">
             <link rel="stylesheet" href="css/responsive.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+            <style>
+
+                p{
+                    font-size: 18px;
+                    width: 700px;
+                }
+
+                div #Home{
+                    height: 500px;
+                    width: 100%;
+                }
+
+                div #achievementImg{
+                    height: 500px;
+                }
+
+                #left{
+                    width: 75%; 
+                    margin-left: 200px;
+                    border-radius: 30px;
+                }
+
+                #right{
+                    width: 75%; 
+                    border-radius: 30px;
+                }
+
+                #leftT{
+                    height: 600px;
+                }
+
+                #rightT{
+                    height: 600px;
+                    background-color: #f9f9f9;
+                }
+
+                #leftBeforFooter{
+                    height: 600px;
+                }
+
+                /* For screen between 480px and 767px */
+                @media (min-width: 480px) and (max-width: 767px) {
+
+                    .container {width:450px}
+                    .slider-inner span {
+                        font-size: 16px;
+                        letter-spacing: 3px;
+                    }
+                    .slider-inner h2 {
+                        font-size: 30px;
+                    }
+                    .slider-inner p {
+                        font-size: 13px;
+                    }
+                    .span-none {
+                        display:inline-block;
+                    }
+                    p{
+                        font-size: 18px;
+                        width: auto;
+                    }
+                    div #Home{
+                        width: 100%;
+                    }
+
+                    #left{
+                        margin-left:0px;
+                        width: 75%;
+                    }
+                    #right{
+                        width:75%
+                    }
+
+                    #leftT{
+                        height: auto;
+                    }
+
+                    #rightT{
+                        height: auto;
+                        background-color: #f9f9f9;
+                    }
+
+                    #leftBeforFooter{
+                        height: auto;
+                    }
+                }
+
+                @media only screen and (max-width:479px){
+                    .span-none {
+                        display:inline-block;
+                    }
+                    p{
+                        font-size: 14px;
+                        width: 450px;
+                    }
+                    div #Home{
+                        width: 100%;
+                    }
+
+                    #left{
+                        margin-left:0px;
+                        width: 75%;
+                    }
+                    #right{
+                        width:75%
+                    }
+
+                    #leftT{
+                        height: auto;
+                    }
+
+                    #rightT{
+                        height: auto;
+                        background-color: #f9f9f9;
+                    }
+
+                    #leftBeforFooter{
+                        height: auto;
+                    }
+                }
+
+                @media (min-width: 768px) and (max-width: 991px){
+                    .span-none {
+                        display:inline-block;
+                    }
+                    p{
+                        font-size: 18px;
+                        width: 450px;
+                    }
+                    div #Home{
+                        width: 100%;
+                    }
+
+                    #left{
+                        margin-left:0px;
+                        width: 75%;
+                    }
+                    #right{
+                        width:75%
+                    }
+
+                    #leftT{
+                        height: auto;
+                    }
+
+                    #rightT{
+                        height: auto;
+                        background-color: #f9f9f9;
+                    }
+
+                    #leftBeforFooter{
+                        height: auto;
+                    }
+                    #row .leftSide{
+                        flex-direction: column-reverse;
+                    }
+                }
+
+                @media (min-width: 992px) and (max-width: 1200px){
+                    .span-none {
+                        display:inline-block;
+                    }
+                    p{
+                        font-size: 18px;
+                        width: 450px;
+                    }
+                    div #Home{
+                        width: 100%;
+                    }
+
+                    #left{
+                        margin-left:100px;
+                        width: 75%;
+                    }
+                    #right{
+                        width:75%
+                    }
+
+                    #leftT{
+                        height: auto;
+                    }
+
+                    #rightT{
+                        height: auto;
+                        background-color: #f9f9f9;
+                    }
+
+                    #leftBeforFooter{
+                        height: auto;
+                    }
+                }
+
+                @media (min-width: 1200px){
+                    .span-none {
+                        display:inline-block;
+                    }
+                    p{
+                        font-size: 18px;
+                        width: auto;
+                    }
+                    div #Home{
+                        width: 100%;
+                    }
+
+                    #left{
+                        margin-left: 200px;
+                        width: 75%;
+                    }
+                    #right{
+                        width:75%
+                    }
+
+                    #leftT{
+                        height: auto;
+                    }
+
+                    #rightT{
+                        height: auto;
+                        background-color: #f9f9f9;
+                    }
+
+                    #leftBeforFooter{
+                        height: auto;
+                    }
+                }
+
+            </style>
+
+            <!-- <script>
+                function adjustLayout() {
+                    const screenWidth = window.innerWidth;
+                    if (screenWidth <= 991) {
+                        const container = document.querySelector('.container');
+                        const text = document.querySelector('.text');
+
+                        container.insertBefore(text, container.firstChild);
+                    }
+                }
+                window.addEventListener('resize', adjustLayout);
+                adjustLayout();
+            </script> -->
+
     </head>
     <body>
         <header>
@@ -38,11 +281,11 @@
                                 <nav id="mobile-menu">
                                     <ul>
                                         <li> <a href="index.html"> HOME </a></li>
-                                        <li> <a name="#about" href="index.html">About</a></li>
-                                        <li> <a href="#team"> Team </a></li>
-                                        <li> <a href="#services">Our Offerings</a></li>
-                                        <li> <a href="#blog"> Blog</a></li>
-                                        <li> <a href="#faq"> FAQ</a></li>
+                                        <li> <a href="index.html#about"> About</a></li>
+                                        <li> <a href="index.html#team"> Team </a></li>
+                                        <li> <a href="index.html#services">Our Offerings</a></li>
+                                        <li> <a href="index.html#blog"> Blog</a></li>
+                                        <li> <a href="index.html#faq"> FAQ</a></li>
                                             <!-- <a href="#"> <i class="icon_bag_alt"></i> </a>
                                             <a href="#"> <i class="icon_search"></i> </a> -->
                                     </ul>
@@ -57,27 +300,27 @@
 
         <div class="slider-area" id="Home">
             <!-- <div class="slider-active owl-carousel"> -->
-                <div class="single-slider d-flex justify-content-center align-items-center" style="background-image: url(img/bg/blogbackground.jpg);">
+                <div class="single-slider d-flex justify-content-center align-items-center" id="achievementImg" style="background-image: url(img/bg/blogbackground.jpg);">
                     <div class="slider-inner">
                         <h2>Achievements</h2>
                     </div>
                 </div>
         </div>
         <!-- Image on right and text on the left -->
-        <div class="welcome-area pt-120 pb-60" id="about" style="height: 600px;">
+        <div class="welcome-area pt-120 pb-60" id="leftT">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6">
                         <div class="welcome mt-70 mb-40">
                             <h2> BEST HASH HACK</h2>
-                            <p style="font-size: 18px; width: 700px;">Team Emo Developers, consisting of Utkarsh Rai, Vikash Saxena, Ashutosh Mishra, Himanshu Kumar Mahto, and Piyush Agarwal, showcased their exceptional skills and creativity at CIC's Annual Hackathon, Hash Hacks. We designed and implemented an innovative AR indoor navigation system that impressed the judges and secured us the prestigious first prize. Our dedication and ingenuity make us trailblazers in the world of technology and navigation. </p>
+                            <p>Team Emo Developers, consisting of Utkarsh Rai, Vikash Saxena, Ashutosh Mishra, Himanshu Kumar Mahto, and Piyush Agarwal, showcased their exceptional skills and creativity at CIC's Annual Hackathon, Hash Hacks. We designed and implemented an innovative AR indoor navigation system that impressed the judges and secured us the prestigious first prize. Our dedication and ingenuity make us trailblazers in the world of technology and navigation. </p>
                                 <br>
                             <a href="https://devfolio.co/projects/ar-go-7ef9" class="link" style="background-color: transparent;  transition: none; box-shadow: none; " >View Project</a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6">
                         <div class="welcome mb-40">
-                            <img src="img/Achievements/CIC.png" alt="" style="width: 75%; margin-left: 200px;"/>
+                            <img id="left" src="img/Achievements/CIC.png" alt=""/>
                         </div>
                     </div>
                 </div>
@@ -85,18 +328,18 @@
         </div>
         <!-- <hr style="height:1px;border:none;color:#333;background-color:#333;"> -->
         <!-- shaded with image on the left and text on the right -->
-        <div class="welcome-area pt-120 pb-60" id="about" style="height: 600px;  background: #F9F9F9;">
+        <div class="welcome-area pt-120 pb-60" id="rightT"  background: #F9F9F9;">
             <div class="container">
-                <div class="row">
+                <div class="row" id="leftSide">
                     <div class="col-xl-6 col-lg-6">
                         <div class="welcome mb-40">
-                            <img src="img/team/himanshumahto.jpg" alt="" style="width: 75%;"/>
+                            <img id="right" src="img/team/himanshumahto.jpg" alt=""/>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6">
                         <div class="welcome mt-70 mb-40">
                             <h2> Himanshu</h2>
-                            <p style="font-size: 18px; width: 700px;">Himanshu Kumar Mahto, a talented individual and a member of Team Emo Developers, achieved remarkable success by clinching the top prize in the prestigious Codethon event organized by JUET, Guna. His exceptional coding skills and problem-solving abilities were on full display during the competition, earning him well-deserved recognition and the first prize. His dedication to the world of coding makes him a standout talent in the field.. </p>
+                            <p>Himanshu Kumar Mahto, a talented individual and a member of Team Emo Developers, achieved remarkable success by clinching the top prize in the prestigious Kodethon event organized by JUET, Guna. His exceptional coding skills and problem-solving abilities were on full display during the competition, earning him well-deserved recognition and the first prize. His dedication to the world of coding makes him a standout talent in the field. </p>
                                 <br>
                             <a href="#contact" class="link" style="background-color: transparent;  transition: none; box-shadow: none; " >Link</a>
                         </div>
@@ -105,20 +348,20 @@
             </div>
         </div>
         <!-- Image on right and text on the left -->
-        <div class="welcome-area pt-120 pb-60" id="about" style="height: 600px;" >
+        <div class="welcome-area pt-120 pb-60" id="leftBeforFooter">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6">
                         <div class="welcome mt-70 mb-40">
-                            <h2> Runner Ups JUET Builds</h2>
-                            <p style="font-size: 18px; width: 700px;">Team Emo, featuring the dynamic duo Utkarsh Rai and Vikash Saxena, showcased their innovation prowess at Juet Builds, clinching the second runner-up position. Their creation, the Virtual Calisthenics Simulator, is a testament to their commitment to fitness and technology. This immersive VR app revolutionizes physical fitness, enabling users to engage in calisthenics and various physical activities from the comfort of their homes. Their achievement highlights their dedication to pushing the boundaries of technology and fitness, making them true trailblazers in the field. </p>
+                            <h2> Runner Up's JUET Builds</h2>
+                            <p>Team Emo, featuring the dynamic duo Utkarsh Rai and Vikash Saxena, showcased their innovation prowess at Juet Builds, clinching the second runner-up position. Their creation, the Virtual Calisthenics Simulator, is a testament to their commitment to fitness and technology. This immersive VR app revolutionizes physical fitness, enabling users to engage in calisthenics and various physical activities from the comfort of their homes. Their achievement highlights their dedication to pushing the boundaries of technology and fitness, making them true trailblazers in the field. </p>
                                 <br>
                             <a href="https://devfolio.co/projects/virtual-calisthenics-simulator-5dec" class="link" style="background-color: transparent;  transition: none; box-shadow: none; " >View Project</a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6">
                         <div class="welcome mb-40">
-                            <img src="img/Achievements/JUET Builds.png" alt="" style="width: 75%; margin-left: 200px;"/>
+                            <img src="img/Achievements/JUET Builds.png" id="left"/>
                         </div>
                     </div>
                 </div>
