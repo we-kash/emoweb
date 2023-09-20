@@ -62,6 +62,7 @@
 
 }
 
+
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
@@ -69,8 +70,7 @@
 .footer-widget {
 	margin-bottom: 50px;
 }
-
-	.project-area .mix-width {
+.project-area .mix-width {
 	width: 50%;
 	margin-bottom: 40px;
 }
@@ -138,14 +138,18 @@
 	width: inherit;
 }
 .span-none {
-	display:none;
-}
-
-
-
- 
+	display:inline-block;
 }
  
+}
+
+/* For screens smaller than 480px */
+/* @media only screen and (max-width: 480px) {
+	.card .card-header h2 button {
+	  font-size: 14px; 
+	}
+}
+  */
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 .container {width:450px}
@@ -162,10 +166,4 @@
 .span-none {
 	display:inline-block;
 }
-
-
-
-
-
-
 }
