@@ -171,19 +171,19 @@ html {
 	left: 0;
 	width: 100%;
 	z-index: 2;
-	/* border-bottom: 1px solid #797b80; */
 }
 .logo {
-	padding-top: 25px;
+	padding-top: 20px;
 }
 .menu nav ul li {
 	display:inline-block;
+	margin-top: -10px;
 }
 .menu nav ul li a {
 	text-transform: uppercase;
 	font-size: 12px;
-	font-weight: 500;
-	color: #dbdbdb;
+	font-weight: 700;
+	color: #ffffff;
 	padding: 40px 25px;
 	display: inline-block;
 }
@@ -279,6 +279,7 @@ nav#mobile-menu ul li a {
 	background:#fff;
 }
 .welcome img {
+	border-radius: 30px;
 	width:100%;
 }
 /* service Area */
@@ -539,8 +540,10 @@ nav#mobile-menu ul li a {
 .footer-widget img {
 	padding-bottom:20px;
 }
+
 .footer-widget p {
-	color: #fff;
+	color: #ffffff;
+	font-weight: 500;
 	margin-bottom: 20px;
 }
 ul.footer-social li {
@@ -548,7 +551,7 @@ ul.footer-social li {
 }
 ul.footer-social li a {
 	color: #f9f9f9;
-	font-size: 12px;
+	font-size: 20px;
 	margin: 0 10px;
 }
 ul.footer-social li a:hover {
@@ -558,14 +561,14 @@ ul.footer-social li:first-child a {
 	margin-left:0;
 }
 .footer-widget h3 {
-	color: #fff;
+	color: #ffffff;
 	padding-top: 20px;
 	font-size: 20px;
 	margin-bottom: 25px;
 }
 .footer-widget span {
 	font-size: 16px;
-	color: #b2b4b7;
+	color: #205bb4;
 	display: block;
 	line-height: 25px;
 	letter-spacing: -1px;
@@ -579,11 +582,11 @@ ul.footer-social li:first-child a {
 	text-transform:uppercase;
 }
 .copy-right p a {
-	color:#fff;
+	color:#000000;
 }
 .back_to_top a {
 	font-size: 12px;
-	color: #fff;
+	color: #000000;
 	text-transform: uppercase;
 	line-height: 40px;
 }
@@ -599,6 +602,12 @@ ul.footer-social li:first-child a {
 	margin-top: -45px;
 }
 
+
+.footer-top p span h3{
+	color: black;
+}
+
+
 /* PreLoader */
 .preloader {
 	position:absolute;
@@ -611,3 +620,4 @@ ul.footer-social li:first-child a {
 	z-index:9999;
 	background-repeat:no-repeat;
 }
+

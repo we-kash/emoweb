@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <meta http-equiv="x-ua-compatible" content="ie=edge">
+            <title> Achievements</title>
+            <meta name="description" content="Explore immersive AR and VR experiences | EMO Developers | Elevate your web and mobile projects with our expertise in AR, VR, Android, and Web development. Transform ideas into captivating digital realities.">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <link rel="manifest" href="site.webmanifest">
+            <link rel="shortcut icon" type="image/x-icon" href="img/EMO_LOGO.png">
+            <!-- Place favicon.ico in the root directory -->
+
+            <!-- CSS here -->
+            <link rel="stylesheet" href="css/bootstrap.min.css">
+            <link rel="stylesheet" href="css/owl.carousel.min.css">
+            <link rel="stylesheet" href="css/elegant.css">
+            <link rel="stylesheet" href="css/magnific-popup.css">
+            <link rel="stylesheet" href="css/fontawesome-all.min.css">
+            <link rel="stylesheet" href="css/meanmenu.css">
+            <link rel="stylesheet" href="css/default.css">
+            <link rel="stylesheet" href="css/style.css">
+            <link rel="stylesheet" href="css/responsive.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+            <style>
+
+                p{
+                    font-size: 18px;
+                    width: 700px;
+                }
+
+                div #Home{
+                    height: 500px;
+                    width: 100%;
+                }
+
+                div #achievementImg{
+                    height: 500px;
+                }
+
+                #left{
+                    width: 75%; 
+                    margin-left: 200px;
+                    border-radius: 30px;
+                }
+
+                #right{
+                    width: 75%; 
+                    border-radius: 30px;
+                }
+
+                #leftT{
+                    height: 600px;
+                }
+
+                #rightT{
+                    height: 600px;
+                    background-color: #f9f9f9;
+                }
+
+                #leftBeforFooter{
+                    height: 600px;
+                }
+
+                /* For screen between 480px and 767px */
+                @media (min-width: 480px) and (max-width: 767px) {
+
+                    .container {width:450px}
+                    .slider-inner span {
+                        font-size: 16px;
+                        letter-spacing: 3px;
+                    }
+                    .slider-inner h2 {
+                        font-size: 30px;
+                    }
+                    .slider-inner p {
+                        font-size: 13px;
+                    }
+                    .span-none {
+                        display:inline-block;
+                    }
+                    p{
+                        font-size: 18px;
+                        width: auto;
+                    }
+                    div #Home{
+                        width: 100%;
+                    }
+
+                    #left{
+                        margin-left:0px;
+                        width: 75%;
+                    }
+                    #right{
+                        width:75%
+                    }
+
+                    #leftT{
+                        height: auto;
+                    }
+
+                    #rightT{
+                        height: auto;
+                        background-color: #f9f9f9;
+                    }
+
+                    #leftBeforFooter{
+                        height: auto;
+                    }
+                }
+
+                @media only screen and (max-width:479px){
+                    .span-none {
+                        display:inline-block;
+                    }
+                    p{
+                        font-size: 14px;
+                        width: 450px;
+                    }
+                    div #Home{
+                        width: 100%;
+                    }
+
+                    #left{
+                        margin-left:0px;
+                        width: 75%;
+                    }
+                    #right{
+                        width:75%
+                    }
+
+                    #leftT{
+                        height: auto;
+                    }
+
+                    #rightT{
+                        height: auto;
+                        background-color: #f9f9f9;
+                    }
+
+                    #leftBeforFooter{
+                        height: auto;
+                    }
+                }
+
+                @media (min-width: 768px) and (max-width: 991px){
+                    .span-none {
+                        display:inline-block;
+                    }
+                    p{
+                        font-size: 18px;
+                        width: 450px;
+                    }
+                    div #Home{
+                        width: 100%;
+                    }
+
+                    #left{
+                        margin-left:0px;
+                        width: 75%;
+                    }
+                    #right{
+                        width:75%
+                    }
+
+                    #leftT{
+                        height: auto;
+                    }
+
+                    #rightT{
+                        height: auto;
+                        background-color: #f9f9f9;
+                    }
+
+                    #leftBeforFooter{
+                        height: auto;
+                    }
+                    #row .leftSide{
+                        flex-direction: column-reverse;
+                    }
+                }
+
+                @media (min-width: 992px) and (max-width: 1200px){
+                    .span-none {
+                        display:inline-block;
+                    }
+                    p{
+                        font-size: 18px;
+                        width: 450px;
+                    }
+                    div #Home{
+                        width: 100%;
+                    }
+
+                    #left{
+                        margin-left:100px;
+                        width: 75%;
+                    }
+                    #right{
+                        width:75%
+                    }
+
+                    #leftT{
+                        height: auto;
+                    }
+
+                    #rightT{
+                        height: auto;
+                        background-color: #f9f9f9;
+                    }
+
+                    #leftBeforFooter{
+                        height: auto;
+                    }
+                }
+
+                @media (min-width: 1200px){
+                    .span-none {
+                        display:inline-block;
+                    }
+                    p{
+                        font-size: 18px;
+                        width: auto;
+                    }
+                    div #Home{
+                        width: 100%;
+                    }
+
+                    #left{
+                        margin-left: 200px;
+                        width: 75%;
+                    }
+                    #right{
+                        width:75%
+                    }
+
+                    #leftT{
+                        height: auto;
+                    }
+
+                    #rightT{
+                        height: auto;
+                        background-color: #f9f9f9;
+                    }
+
+                    #leftBeforFooter{
+                        height: auto;
+                    }
+                }
+                
+                @media (max-width: 480px){
+                    .span-none {
+                        display:inline-block;
+                    }
+                    p{
+                        font-size: 14px;
+                        width: 300px;
+                    }
+                    div #Home{
+                        width: 100%;
+                    }
+
+                    #left{
+                        margin-left: 00px;
+                        width: 75%;
+                    }
+                    #right{
+                        width:75%
+                    }
+
+                    #leftT{
+                        height: auto;
+                    }
+
+                    #rightT{
+                        height: auto;
+                        background-color: #f9f9f9;
+                    }
+
+                    #leftBeforFooter{
+                        height: auto;
+                    }
+                }
+
+            </style>
+
+            <!-- <script>
+                function adjustLayout() {
+                    const screenWidth = window.innerWidth;
+                    if (screenWidth <= 991) {
+                        const container = document.querySelector('.container');
+                        const text = document.querySelector('.text');
+
+                        container.insertBefore(text, container.firstChild);
+                    }
+                }
+                window.addEventListener('resize', adjustLayout);
+                adjustLayout();
+            </script> -->
+
+    </head>
+    <body>
+        <header>
+            <div class="header-area  transparent-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-2 col-lg-2 col-md-2">
+                            <div class="logo">
+                                <a href="index.html"> <img src="img/EMO_LOGO.png" alt="styler"  style="width: 100px;"/> </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10">
+                            <div class="menu text-right">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                        <li> <a href="index.html"> HOME </a></li>
+                                        <li> <a href="Achievements.html">Achievements</a></li>
+                                        <li> <a href="index.html#about"> About</a></li>
+                                        <li> <a href="index.html#team"> Team </a></li>
+                                        <li> <a href="index.html#services">Offerings</a></li>
+                                        <li> <a href="index.html#blog"> Blog</a></li>
+                                        <li> <a href="index.html#faq"> FAQ</a></li>
+                                            <!-- <a href="#"> <i class="icon_bag_alt"></i> </a>
+                                            <a href="#"> <i class="icon_search"></i> </a> -->
+                                    </ul>
+                                </nav>
+                                <div class="mobile-menu"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="slider-area" id="Home">
+            <!-- <div class="slider-active owl-carousel"> -->
+                <div class="single-slider d-flex justify-content-center align-items-center" id="achievementImg" style="background-image: url(img/Projects/projectBG.jpg);">
+                    <div class="slider-inner">
+                        <h2>Our Projects</h2>
+                    </div>
+                </div>
+        </div>
+        <!-- Image on right and text on the left -->
+        <div class="welcome-area pt-120 pb-60" id="leftT">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="welcome mt-70 mb-40">
+                            <h2> Indoor Navigation</h2>
+                            <p style="text-align: justify;">AR Go refers to the use of augmented reality technology to provide direction and guidance to individuals as they navigate through indoor spaces. In this project we have used AR Foundation to augment models and have used Nav Mesh from Unity's AI to traverse from one point to another, we also mapped the local environment to create and import a 3d model of the actual location in Unity. </p>
+                                <br>
+                            <a href="https://www.youtube.com/watch?v=LAa6ba0n6Uc" class="link" style="background-color: transparent;  transition: none; box-shadow: none; " >Watch Online</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="welcome mb-40">
+                            <img id="left" src="img/Projects/indoorNavigation.jpeg" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <hr style="height:1px;border:none;color:#333;background-color:#333;"> -->
+        <!-- shaded with image on the left and text on the right -->
+        <div class="welcome-area pt-120 pb-60" id="rightT"  background: #F9F9F9;">
+            <div class="container">
+                <div class="row" id="leftSide">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="welcome mb-40">
+                            <img id="right" src="img/Projects/arExplorer.jpeg" alt=""/>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="welcome mt-70 mb-40">
+                            <h2> AR Explorer</h2>
+                            <p style="text-align: justify;">AR World Explorer is an innovative educational platform that utilizes the Augmented Reality Portal technique to provide students with immersive and interactive experiences of museums and geographical locations. The platform aims to address the limitations of traditional classroom learning by offering an attractive and safe alternative that enhances students' learning experience and promotes a deeper understanding of the subject matter.</p>
+                                <br>
+                            <a href="https://youtu.be/gscuWh7TYv4" class="link" style="background-color: transparent;  transition: none; box-shadow: none; " >Watch Online</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Image on right and text on the left -->
+        <div class="welcome-area pt-120 pb-60" id="leftBeforFooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="welcome mt-70 mb-40">
+                            <h2>Virtual Calisthenics</h2>
+                            <p style="text-align: justify;">Team Emo, featuring the dynamic duo Utkarsh Rai and Vikash Saxena, showcased their innovation prowess at Juet Builds, clinching the second runner-up position. Their creation, the Virtual Calisthenics Simulator, is a testament to their commitment to fitness and technology. This immersive VR app revolutionizes physical fitness, enabling users to engage in calisthenics and various physical activities from the comfort of their homes. Their achievement highlights their dedication to pushing the boundaries of technology and fitness, making them true trailblazers in the field. </p>
+                                <br>
+                            <a href="https://youtu.be/98NPhk5gwMo" class="link" style="background-color: transparent;  transition: none; box-shadow: none; " >Watch Online</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="welcome mb-40">
+                            <img src="img/Projects/vrCalestanics.png" id="left"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Footer Area -->
+<!-- <a href="contact"> -->
+    <footer> 
+        <div class="footer-top pt-100 pb-90" style="background:url(/img/slider/background2_1.png); background-size:cover;" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-5">
+                        <div class="footer-widget">
+                            <img src="img/EMO_LOGO.png" alt="Stylux" style="width: 100px;"/>
+                            <p>Emulating Meta Orion<br></p>
+                            <ul class="footer-social">
+                                <!-- <li> <a href="#" > <i class="social_facebook "> </i> </a> </li> -->
+                                <li> <a href="https://twitter.com/Emo_Developers" target="_blank"> <i class="social_twitter"> </i> </a> </li>
+                                <li> <a href="https://www.linkedin.com/in/emodev/" target="_blank"> <i class="social_linkedin "> </i> </a> </li>
+                                <li> <a href="https://github.com/Emulating-Meta-Orion/" target="_blank"> <i class=" fab fa-github"> </i> </a> </li>
+                                <!-- <li> <a href="#" > <i class="social_vimeo "> </i> </a> </li>
+                                <li> <a href="#" > <i class="social_dribbble"> </i> </a> </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-7 ">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-4">
+                                <div class="footer-widget mb-55">
+                                    <h3> Call </h3>
+                                    <span>+91 7985420678</span>
+                                    <span>+91 8962817772</span>
+                                    <span>+91 9044707947</span>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4">
+                                <div class="footer-widget mb-55">
+                                    <h3> Email </h3>
+                                    <span>emodevelopers@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4">
+                                <div class="footer-widget  mb-55">
+                                    <h3> Address </h3>
+                                    <span>Jaypee University of Engineering Technology<br>
+                                    Guna, Madhya Pradesh India<br> 473226<br>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-xl-12 ">
+                                <div class="custom_border">
+                                        <div class="copy-right float-left">
+                                            <p>Made With Love by,<a href="#"> Himanshu & Ankur</a></p>
+                                        </div>
+
+                                        <div class="back_to_top text-right d-none d-sm-block"> 
+                                            <a href="Achievements.html"> back to top </a> 
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer></a>
+                <!-- JS here -->
+                <script src="js/vendor/jquery-1.12.4.min.js"></script>
+                <script src="js/popper.min.js"></script>
+                <script src="js/bootstrap.min.js"></script>
+                <script src="js/owl.carousel.min.js"></script>
+                <script src="js/jquery.meanmenu.min.js"></script>
+                <script src="js/jquery.magnific-popup.min.js"></script>
+                <script src="js/plugins.js"></script>
+                <script src="js/main.js"></script>
+    </body>
+</html>
